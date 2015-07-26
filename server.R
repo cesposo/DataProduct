@@ -16,7 +16,7 @@ library(shiny)
 #Loading up the data
 
 statesMap = map_data("state")
-polling = read.csv("C:/Users/Blah/Dropbox/Coursers/Coursera Classes/Developing Data Products/Project/PollingImputed.csv")
+polling = read.csv("C:/Users/Blah/Dropbox/Coursers/Coursera Classes/Developing Data Products/Project/Data.csv")
 
 trainP = subset(polling, Year %in% c(2004, 2008))
 testP = subset(polling, Year == 2012)
